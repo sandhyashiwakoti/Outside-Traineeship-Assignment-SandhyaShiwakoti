@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 2px 80px;
+    font-size: 14px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: red;
+}
+
+fieldset {
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+td {
+    padding: 2px 15px 8px 0;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    padding: 4px;
+    width: 150px;
+}
+
+select {
+    padding: 4px;
+    width: 180px;
+}
+hr{
+    margin: 20px 0;
+}
+.contact-button {
+    background-color: #3a3f6b;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: 0.9em;
+}

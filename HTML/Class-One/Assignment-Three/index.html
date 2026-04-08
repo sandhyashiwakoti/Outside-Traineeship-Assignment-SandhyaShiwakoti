@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>HTML Learning</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Support</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>HTML Forms</h2>
+            <hr>
+        </section>
+
+        <section>
+            <h3>Zoo Keeper Application Form</h3>
+            <p><em>Please complete the form. Mandatory fields are marked with a <span>*</span></em></p>
+            <form>
+                <fieldset>
+                    <legend>CONTACT DETAILS</legend>
+                    <table>
+                        <tr>
+                            <td><label for="contact-name">Name <span>*</span></label></td>
+                            <td><input type="text" id="contact-name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="contact-telephone">Telephone</label></td>
+                            <td><input type="tel" id="contact-telephone"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="contact-email">Email <span>*</span></label></td>
+                            <td><input type="email" id="contact-email" required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>PERSONAL INFORMATION</legend>
+                    <table>
+                        <tr>
+                            <td><label for="age">Age <span>*</span></label></td>
+                            <td><input type="number" id="age" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">Gender</label></td>
+                            <td>
+                                <select id="gender">
+                                    <option>Select</option>
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="experience">When did you first know you wanted to be a zoo-keeper?</label></td>
+                            <td><textarea rows="4" cols="30" id="experience"></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>PICK YOUR FAVORITE ANIMALS</legend>
+                    <table>
+                        <tr>
+                            <td><label><input type="checkbox" > Zebra</label></td>
+                            <td><label><input type="checkbox" > Cat</label></td>
+                            <td><label><input type="checkbox" > Anaconda</label></td>
+                            <td><label><input type="checkbox" > Human</label></td>
+                        </tr>
+                        <tr>
+                            <td><label><input type="checkbox" > Elephant</label></td>
+                            <td><label><input type="checkbox" > Wildebeest</label></td>
+                            <td><label><input type="checkbox" > Pigeon</label></td>
+                            <td><label><input type="checkbox" > Crab</label></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <button type="submit" class="contact-button">Submit Application</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Personal Details</h3>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="personal-name">Name</label></td>
+                        <td><input type="text" id="personal-name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="personal-email">Email</label></td>
+                        <td><input type="email" id="personal-email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="location">Location</label></td>
+                        <td><input type="text" id="location"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="birthday">Birthday</label></td>
+                        <td><input type="date" id="birthday"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td>
+                            <select id="country">
+                                <option>Select country</option>
+                                <option>Nepal</option>
+                                <option>India</option>
+                                <option>USA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="other-info">Other Information</label></td>
+                        <td><textarea id="other-info" rows="3" cols="25"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" id="newsletter">
+                            <label for="newsletter"> I want to receive the newsletter</label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>© Copyright. End of my first project</p>
+    </footer>
+
+</body>
+</html>
