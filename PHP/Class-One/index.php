@@ -11,8 +11,15 @@ else {
     $errors = [];
 } 
 
+// saves old values in session
+if (isset($_SESSION["old"])) {
+    $old = $_SESSION["old"];
+} else {
+    $old = [];
+}
+
 // deletes errors from session after refreshing 
-unset($_SESSION["errors"]);
+unset($_SESSION["errors"], $_SESSION["old"]);
 ?>  
 
 
@@ -39,12 +46,12 @@ unset($_SESSION["errors"]);
         <!-- Different Form Fields -->
         <div class="form-field">
             <label>Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" value="<?= isset($old['name']) ? htmlspecialchars($old['name']) : '' ?>">
         </div>
 
         <div class="form-field">
             <label>Age</label>
-            <input type="number" name="age">
+            <input type="number" name="age" value="<?= isset($old['age']) ? htmlspecialchars($old['age']) : '' ?>">
         </div>
 
         <div class="form-field">

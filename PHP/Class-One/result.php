@@ -26,6 +26,7 @@ if (empty($color)) {
 // If there are errors then store them in session and go back to index.php
 if (!empty($errors)) {
     $_SESSION["errors"] = $errors;
+    $_SESSION["old"] = $_POST; // Store old values in session so they don't disappear after refreshing
     header("Location: index.php");
     exit;
 }
@@ -40,6 +41,7 @@ else{
 if (empty($hobbies)) {
     $hobbiesList = "None";
 } else {
+    $hobbies = array_map('htmlspecialchars', $hobbies);
     $hobbiesList = implode(", ", $hobbies); //implode changes array to string 
 }
 
@@ -76,12 +78,12 @@ switch ($color) {
 <div class="container">
     <h1>Results</h1>
     <div>
-        <p>Hello, <?= $name ?>!</p>
+        <p>Hello, <?= htmlspecialchars($name) ?></p>
         <p>You are <?= $ageType ?>.</p>
         <p><?= $colorMsg ?></p>
-        <p>Hobbies: <?= $hobbiesList ?></p>
+        <p>Hobbies: <?= htmlspecialchars($hobbiesList) ?></p>
         <p>Years lived:</p>
-        <div><?= $yearsLived ?></div>
+        <div><?= htmlspecialchars($yearsLived) ?></div>
     </div>
     <br>
     <a href="index.php">Submit Another</a>
