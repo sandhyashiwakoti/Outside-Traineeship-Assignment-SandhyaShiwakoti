@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Removing Gaps Between Inline Elements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>Method 1: font-size: 0</h3>
+    <div class="parent-method-1">
+      <div class="column">inline</div>
+      <div class="column">block</div>
+    </div>
+
+    <h3>Method 2: Removing whitespace in HTML</h3>
+    <div>
+      <!-- Putting tags right next to each other remove the gap -->
+      <div class="column">inline</div>
+      <div class="column">block</div>
+    </div>
+
+    <h3>Method 3: Negative Margin</h3>
+    <div class="parent-method-2">
+      <div class="column">inline</div>
+      <div class="column">block</div>
+    </div>
+  </body>
+</html>

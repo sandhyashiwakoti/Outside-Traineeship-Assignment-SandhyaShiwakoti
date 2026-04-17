@@ -1,0 +1,23 @@
+.column {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  color: black;
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid #fff;
+}
+
+/* Method 1: Font-size 0 on the parent */
+.parent-method-1 {
+  font-size: 0;
+}
+.parent-method-1 .column {
+  font-size: 16px;
+}
+
+/* Method 2: Negative Margin */
+.parent-method-2 .column {
+  margin-right: -4px;
+}
