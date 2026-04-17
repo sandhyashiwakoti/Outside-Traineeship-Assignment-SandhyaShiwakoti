@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display and Visibility</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>1. display: none</h3>
+    <div class="container">
+      <div class="box none">Item 1</div>
+      <p>The blue box is gone. The text moved up to fill the space.</p>
+    </div>
+
+    <h3>2. visibility: hidden</h3>
+    <div class="container">
+      <div class="box hidden">Item 2</div>
+      <p>The blue box is invisible, but it still takes up space (empty gap).</p>
+    </div>
+
+    <h3>3. opacity: 0</h3>
+    <div class="container">
+      <div class="box transparent" onclick="alert('Clicked!')">Item 3</div>
+      <p>
+        Invisible and takes up space. If you click the empty space above, the
+        alert still triggers!
+      </p>
+    </div>
+  </body>
+</html>
