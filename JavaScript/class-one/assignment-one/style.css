@@ -1,0 +1,63 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background: #f0ecec;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  border-bottom: 3px solid #007bff;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+h3 {
+  color: #333;
+  background: #e7f1ff;
+  padding: 4px;
+  margin: 5px 0;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+p {
+  font-size: 1rem;
+  padding: 2px 0;
+}
+
+span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#fizzbuzz-box {
+  color: #28a745;
+  font-weight: bold;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
