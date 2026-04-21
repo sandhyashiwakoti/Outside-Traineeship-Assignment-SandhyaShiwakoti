@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <!-- Font import from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main page -->
+    <div class="page">
+      <!-- Plan cards -->
+      <div class="plans">
+        <!-- Basic Plan -->
+        <div class="plan-card" id="basic">
+          <div class="plan-header">Basic</div>
+          <div class="plan-body">
+            <div class="plan-price">$5</div>
+            <div class="plan-time">per month</div>
+            <ul class="plan-features">
+              <li>All features and resources</li>
+              <li>Additional support</li>
+              <li>50 Audio and video calls</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="plan-card" id="pro">
+          <div class="plan-header">Pro</div>
+          <div class="plan-body">
+            <div class="plan-price">$10</div>
+            <div class="plan-time">per month</div>
+            <ul class="plan-features">
+              <li>Vat Features</li>
+              <li>Mailing Address</li>
+              <li>150 Audio and video calls</li>
+              <li>Additional security features</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan-card" id="premium">
+          <div class="plan-header">Premium</div>
+          <div class="plan-body">
+            <div class="plan-price">$20</div>
+            <div class="plan-time">per month</div>
+            <ul class="plan-features">
+              <li>All features and resources</li>
+              <li>Vat and security features</li>
+              <li>Unlimited Audio and video calls</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Card -->
+      <div class="detail-card">
+        <!-- User Details -->
+        <div class="details">
+          <span class="label">5 Users</span>
+          <span class="label right">100 Users</span>
+          <div class="bar-track">
+            <div class="bar-fill" id="users"></div>
+          </div>
+        </div>
+
+        <!-- Storage Details -->
+        <div class="details">
+          <span class="label">20 GB</span>
+          <span class="label right">200 GB</span>
+          <div class="bar-track">
+            <div class="bar-fill" id="storage"></div>
+          </div>
+        </div>
+
+        <!-- Project Details -->
+        <div class="details">
+          <span class="label">1 Project</span>
+          <span class="label right">50 Projects</span>
+          <div class="bar-track">
+            <div class="bar-fill" id="projects"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
