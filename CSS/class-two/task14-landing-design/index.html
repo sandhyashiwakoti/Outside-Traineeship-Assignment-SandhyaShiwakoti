@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W. Magazine</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="top-bar">
+      <!-- Container for navigation -->
+      <div class="container top-bar-container">
+        <a href="#" class="name">W.</a>
+        <input type="checkbox" id="menu" class="menu-toggle" />
+        <!-- Navigation links for desktop -->
+        <nav class="navbar">
+          <ul class="links">
+            <li><a href="#" class="link">Home</a></li>
+            <li><a href="#" class="link">New</a></li>
+            <li><a href="#" class="link">Popular</a></li>
+            <li><a href="#" class="link">Trending</a></li>
+            <li><a href="#" class="link">Categories</a></li>
+          </ul>
+        </nav>
+        <!-- Hamburger menu -->
+        <label for="menu" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="mobile-menu">
+          <!-- &#x2715 is the HTML entity for the '×' symbol -->
+          <label for="menu" class="close-menu">&#x2715;</label>
+          <!-- Navigation links for mobile -->
+          <ul class="mobile-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </div>
+        <!-- Dark overlay on page during mobile menu open -->
+        <label for="menu" class="dark-overlay"></label>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <!-- Big Story Section -->
+      <section class="big-story">
+        <!-- Container for the big story content -->
+        <div class="container big-story-container">
+          <!-- Main Article that consists of the main image,text and button -->
+          <article class="main-article">
+            <img
+              class="main-photo"
+              src="../images/hero.jpg"
+              alt="Colorful 3D blocks representing Web 3.0"
+            />
+            <div class="main-text">
+              <h1 class="main-title">The Bright Future of Web 3.0?</h1>
+              <div class="main-details">
+                <p class="main-description">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <a href="#" class="readmore-btn">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- New Stories Box -->
+          <aside class="new-box">
+            <h2 class="new-box-heading">New</h2>
+            <!-- First News Item -->
+            <article class="news">
+              <h3 class="news-title">
+                <a href="#">Hydrogen VS Electric Cars</a>
+              </h3>
+              <p class="news-description">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </article>
+            <hr class="news-line" />
+            <!-- Second News Item -->
+            <article class="news">
+              <h3 class="news-title">
+                <a href="#">The Downsides of AI Artistry</a>
+              </h3>
+              <p class="news-description">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+            <hr class="news-line" />
+            <!-- Third News Item -->
+            <article class="news">
+              <h3 class="news-title">
+                <a href="#">Is VC Funding Drying Up?</a>
+              </h3>
+              <p class="news-description">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Cards Section -->
+      <section class="cards-section">
+        <!-- Container for the cards -->
+        <div class="container">
+          <ul class="cards-row">
+            <!-- First Card -->
+            <li class="card">
+              <img class="card-photo" src="../images/pc.jpg" alt="Retro PCs" />
+              <div class="card-info">
+                <span class="card-num" aria-hidden="true">01</span>
+                <h3 class="card-title">Reviving Retro PCs</h3>
+                <p class="card-description">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </li>
+            <!-- Second Card -->
+            <li class="card">
+              <img
+                class="card-photo"
+                src="../images/laptop.jpg"
+                alt="Laptops"
+              />
+              <div class="card-info">
+                <span class="card-num" aria-hidden="true">02</span>
+                <h3 class="card-title">Top 10 Laptops of 2022</h3>
+                <p class="card-description">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </li>
+            <!-- Third Card -->
+            <li class="card">
+              <img
+                class="card-photo"
+                src="../images/gaming.jpg"
+                alt="Gaming controller"
+              />
+              <div class="card-info">
+                <span class="card-num" aria-hidden="true">03</span>
+                <h3 class="card-title">The Growth of Gaming</h3>
+                <p class="card-description">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <!-- &#8679; is the HTML entity for the up arrow symbol -->
+    <a href="#" class="top-btn" aria-label="Back to top">&#8679;</a>
+  </body>
+</html>
