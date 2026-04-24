@@ -2,7 +2,7 @@
 class DisplayUser {
   // Constructor with default parameters for interval and output function
   // Instead of fixed console.log, used output so we can print in console and HTML
-  constructor(interval = 1000, output = console.log) {
+  constructor(interval = 1000, output) {
     this.interval = interval;
     this.output = output;
   }
@@ -51,19 +51,19 @@ ${extraInfo}
 
   // Method to run class-based approach sequentially
   async runClassBased(user1, user2) {
-    const u1 = { ...user1 };
-    const u2 = { ...user2 };
+    const u1 = { ...user1 }; // spread operator to create a copy of user1
+    const u2 = { ...user2 }; // spread operator to create a copy of user2
 
     // Countdown
     await this.countdown();
 
     // Show user1 right after countdown
-    this.output("\n User1 after countdown:");
+    this.output("\nUser1 after countdown:");
     this.displayUser(u1);
 
     // Wait 5 seconds, then show user2
     await new Promise((resolve) => setTimeout(resolve, 5000));
-    this.output("\n User2 after 5 seconds:");
+    this.output("\nUser2 after 5 seconds:");
     this.displayUser(u2);
   }
 }

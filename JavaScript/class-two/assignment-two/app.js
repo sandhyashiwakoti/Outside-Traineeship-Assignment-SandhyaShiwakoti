@@ -18,16 +18,13 @@ const functionalOutput = document.getElementById("functional-output");
 // Output function to print messages in both console and HTML document
 const output = (approach) => (message) => {
   console.log(message);
-  if (approach) {
-    approach.textContent += `${message}\n`;
-  }
+  approach.textContent += `${message}\n`;
 };
 
-// Main function to run class-based and functional-based approach sequentially
-const start = async () => {
+// Main function to run class-based and functional-based approach in parallel
+function start() {
   const classDisplay = new DisplayUser(1000, output(classOutput));
-  await classDisplay.runClassBased(user1, user2);
-  await runFunctionalBased(user1, user2, output(functionalOutput));
-};
-
+  classDisplay.runClassBased(user1, user2);
+  runFunctionalBased(user1, user2, output(functionalOutput));
+}
 start();

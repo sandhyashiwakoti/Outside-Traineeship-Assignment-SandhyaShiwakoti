@@ -20,7 +20,7 @@ ${extraInfo}
 };
 
 // Countdown function with default parameters for value, interval, and output function
-const countdown = (value = 10, interval = 1000, output = console.log) => {
+const countdown = (value = 10, interval = 1000, output) => {
   return new Promise((resolve) => {
     let count = value;
     const timer = setInterval(() => {
@@ -36,7 +36,7 @@ const countdown = (value = 10, interval = 1000, output = console.log) => {
 };
 
 // Main function to run functional-based approach sequentially
-const runFunctionalBased = async (user1, user2, output = console.log) => {
+const runFunctionalBased = async (user1, user2, output) => {
   const u1 = { ...user1 };
   const u2 = { ...user2 };
 
@@ -44,12 +44,12 @@ const runFunctionalBased = async (user1, user2, output = console.log) => {
   await countdown(10, 1000, output);
 
   // Show user1 right after countdown
-  output("\n Showing user1 after countdown:");
+  output("\nUser1 after countdown:");
   displayUser(u1, output);
 
   // Wait 5 seconds, then show user2
   await new Promise((resolve) => setTimeout(resolve, 5000));
-  output("\n Showing user2 after 5 seconds:");
+  output("\nUser2 after 5 seconds:");
   displayUser(u2, output);
 };
 
