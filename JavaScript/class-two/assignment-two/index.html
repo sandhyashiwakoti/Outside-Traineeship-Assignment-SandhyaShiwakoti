@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Container that contains the output sections -->
+    <main class="output-container">
+      <!-- Class Based Output -->
+      <section class="output class-output-container">
+        <h2>Class Based</h2>
+        <!-- pre keeps line breaks(\n) and spaces, but div ignores them -->
+        <pre id="class-output"></pre>
+      </section>
+      <!-- Functional Based Output -->
+      <section class="output functional-output-container">
+        <h2>Functional Based</h2>
+        <pre id="functional-output"></pre>
+      </section>
+    </main>
+    <!-- Use module to enable ES6 modules (import/export) -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #d8dce1;
+}
+
+/* Two Column Layout */
+.output-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 70px;
+}
+
+.output {
+  border-radius: 8px;
+  padding: 12px;
+}
+
+/* Output Headers */
+.output h2 {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+/* Container with header and content */
+.class-output-container {
+  background: #e8f2ff;
+}
+
+.functional-output-container {
+  background: #f1e9ff;
+}
+
+/* Output Content */
+#class-output,
+#functional-output {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 6px;
+  background: white;
+}
