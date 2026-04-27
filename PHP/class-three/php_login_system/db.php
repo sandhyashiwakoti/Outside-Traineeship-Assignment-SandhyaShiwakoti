@@ -2,10 +2,10 @@
 
 // connection to the database
 
-$host = "localhost";       // localhost means the database is on the same server as the PHP code
-$dbname = "login_system";  // database we created in phpMyAdmin
-$username = "root";        // MySQL username (default "root" in XAMPP)
-$password = "";            // MySQL password ( default "" empty in XAMPP)
+$host = "sql113.infinityfree.com"; 
+$dbname = "if0_41677223_login_system"; 
+$username = "if0_41677223";        // (default "root" in XAMPP)
+$password = "BfiHkAC9GcC";            // (default "" empty in XAMPP)
 
 // Try to connect using PDO(PHP Data Object)
 try {

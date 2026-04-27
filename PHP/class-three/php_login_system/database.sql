@@ -1,9 +1,9 @@
 -- This SQL File is run on phpMyAdmin SQL tab to create the database and users table for the login system
 -- First, create the database
-CREATE DATABASE IF NOT EXISTS login_system;
+CREATE DATABASE IF NOT EXISTS if0_41677223_login_system;
 
 -- Switch to that database
-USE login_system;
+USE if0_41677223_login_system;
 
 -- Create the users table with 3 columns: id, username, password
 CREATE TABLE IF NOT EXISTS users (
