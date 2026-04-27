@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #777;
+  color: white;
+  padding: 30px;
+}
+
+.menu {
+  float: left;
+  width: 25%;
+  padding: 15px;
+}
+
+.menu li {
+  background-color: #33b5e5;
+  color: white;
+  padding: 8px;
+  margin-bottom: 7px;
+  list-style-type: none;
+}
+
+.main-content {
+  float: left;
+  width: 75%;
+  padding: 15px;
+}
+
+footer {
+  background-color: #777;
+  color: white;
+  padding: 15px;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

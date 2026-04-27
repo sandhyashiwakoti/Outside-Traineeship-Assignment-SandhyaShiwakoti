@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Tooltips</title>
+    <!-- Font Awesome Icon (cdn) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="emoji-container">
+      <!-- Danger Tooltip -->
+      <div class="icon-with-tooltip">
+        <div class="icon">
+          <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+        <div class="tooltip tooltip-below tooltip-danger">
+          This is DANGER tooltip!
+        </div>
+      </div>
+
+      <!-- Fingerprint Tooltip -->
+      <div class="icon-with-tooltip">
+        <div class="icon">
+          <img
+            class="svg-icon"
+            src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/fingerprint.svg"
+            alt="fingerprint icon"
+          />
+        </div>
+        <div class="tooltip tooltip-above tooltip-fingerprint">
+          This is DANG... no no no! &#x1F60A; tooltip!
+        </div>
+      </div>
+
+      <!-- COW Tooltip -->
+      <div class="icon-with-tooltip">
+        <div class="icon">
+          <span class="cow-icon"></span>
+        </div>
+        <div class="tooltip tooltip-below tooltip-cow">
+          This is COW tooltip!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

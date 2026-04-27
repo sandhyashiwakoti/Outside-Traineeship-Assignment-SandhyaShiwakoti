@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.chessboard-container {
+  border: 5px solid black;
+  padding: 10px;
+  background-color: white;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 30px repeat(8, 60px) 30px;
+  grid-template-rows: 30px repeat(8, 60px) 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.square-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Dimmed by default */
+  filter: brightness(0.7);
+  transition: 0.3s;
+}
+
+.square-box img {
+  width: 80%;
+  height: auto;
+}
+
+.black {
+  background-color: #000;
+}
+.gray {
+  background-color: #a0a0a0;
+}
+.white {
+  background-color: #fff;
+}
+
+/* Hover change color */
+.square-box:hover {
+  background-color: #ffeb3b !important; /* Yellow hover */
+  filter: brightness(1); /* Removes dimming on hover */
+  cursor: pointer;
+}
+
+/* brighter if contains image, dimmed if no image */
+/* has() pseudo class detects the img inside */
+.square-box:has(img) {
+  filter: brightness(1.2);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Centering labels */
+.board div:not(.square-box) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
