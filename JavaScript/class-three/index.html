@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Manager</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- welcome popup that shows after 1 second -->
+    <div id="modal">
+      <div id="modal-box">
+        <h2>Welcome to our List Manager</h2>
+        <button id="close-modal">&times;</button>
+      </div>
+    </div>
+
+    <!-- toast message -->
+    <div id="toast"></div>
+
+    <!-- main content -->
+    <div id="container">
+      <h1>'LIST MANAGER'</h1>
+
+      <!-- shows how many items are in the list -->
+      <p id="item-count">Total Items: <span id="item-count-number">0</span></p>
+
+      <div class="inputs-group">
+        <!-- search box to filter items -->
+        <div class="input-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="search-input" placeholder="Search items..." />
+        </div>
+      </div>
+
+      <!-- input to add a new item -->
+      <div class="inputs-group">
+        <div id="add-section">
+          <div class="input-box">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <input type="text" id="add-input" placeholder="Enter new item..." />
+          </div>
+          <button id="add-btn">ADD ITEM</button>
+        </div>
+      </div>
+
+      <!-- the list where items will appear -->
+      <ul id="item-list"></ul>
+
+      <!-- message shown when search finds nothing -->
+      <p id="no-results">No results found</p>
+
+      <!-- clears everything in the list -->
+      <button id="clear-btn">CLEAR ALL ITEMS</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
