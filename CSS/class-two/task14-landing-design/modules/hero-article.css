@@ -1,0 +1,22 @@
+/* featured image */
+.hero__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* big headline */
+.hero__title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+/* paragraph below the title */
+.hero__description {
+  font-size: 0.95rem;
+  color: var(--gray);
+  max-width: 55ch;
+}

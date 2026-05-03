@@ -1,0 +1,29 @@
+/* structure - shape and size of all buttons */
+.btn {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 100px;
+  border: 2px solid var(--brown);
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all var(--transition);
+}
+
+/* skin - follow button is empty by default, fills on hover */
+.btn--outline {
+  background: transparent;
+  color: var(--text-dark);
+}
+
+.btn--outline:hover {
+  background: var(--brown-dark);
+  color: #fff;
+}
+
+/* skin - message button is always filled, no hover change */
+.btn--filled {
+  background: var(--brown);
+  color: #fff;
+}

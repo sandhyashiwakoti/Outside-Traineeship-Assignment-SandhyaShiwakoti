@@ -1,0 +1,22 @@
+/* base font and color for whole page */
+body {
+  font-family: "Source Sans 3", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* removes underline from all links */
+a {
+  text-decoration: none;
+}
+
+/* removes bullet points from all lists */
+ul {
+  list-style: none;
+}

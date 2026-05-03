@@ -1,0 +1,55 @@
+/* structure - outer card wrapper */
+.profile-card {
+  display: flex;
+  width: 100%;
+  max-width: 560px;
+}
+
+/* skin - white background and shadow */
+.profile-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* left side - avatar, name, role and buttons */
+.profile-card__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 24px;
+  gap: 10px;
+}
+
+/* right side - three detail blocks */
+.profile-card__right {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* wrapper for two buttons */
+.profile-card__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* on mobile */
+@media (max-width: 480px) {
+  .profile-card {
+    flex-direction: column;
+  }
+
+  .profile-card__right {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .detail-block {
+    padding: 20px 0;
+  }
+}

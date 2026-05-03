@@ -1,0 +1,15 @@
+/* header stays at top while scrolling */
+.header {
+  padding-block: 1rem;
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* row layout inside header */
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

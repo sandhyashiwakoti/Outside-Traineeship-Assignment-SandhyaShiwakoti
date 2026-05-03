@@ -1,0 +1,35 @@
+/* fixed button at bottom */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  width: 48px;
+  height: 48px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  animation: bounce 1.4s ease-in-out infinite;
+  z-index: 99;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* hidden on desktop */
+@media (min-width: 64em) {
+  .scroll-top {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+/* all colors and sizes used in the page */
+:root {
+  --bg: #f5f0e8;
+  --dark: #0d0d1a;
+  --red: #e8613a;
+  --gold: #c9a84c;
+  --text: #1a1a2e;
+  --gray: #6b6b80;
+  --white: #ffffff;
+  --sidebar-bg: #0d0d1a;
+  --max-width: 1200px;
+  --gap: 1rem;
+  --transition: 0.25s ease;
+}
+
+@media (min-width: 48em) {
+  :root {
+    --gap: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  :root {
+    --gap: 3rem;
+  }
+}

@@ -1,0 +1,34 @@
+/* structure - layout of each detail box */
+.detail-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+/* skin - background and border of each detail box */
+.detail-block {
+  background: var(--bg-block);
+  border: 1px solid #e0d0c8;
+  transition: all var(--transition);
+}
+
+/* top and bottom block darkers on hover */
+.detail-block:hover {
+  background: var(--bg-block-dark);
+}
+
+/* number on blocks */
+.detail-block__number {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+/* label under the number in each block */
+.detail-block__label {
+  font-size: 13px;
+  color: var(--text-mid);
+}

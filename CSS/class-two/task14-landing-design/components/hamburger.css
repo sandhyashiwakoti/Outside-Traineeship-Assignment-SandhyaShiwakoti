@@ -1,0 +1,24 @@
+/* three line button that opens mobile menu */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* each line in hamburger */
+.hamburger__line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  transition: var(--transition);
+}
+
+/* hide hamburger on desktop */
+@media (min-width: 64em) {
+  .hamburger {
+    display: none;
+  }
+}

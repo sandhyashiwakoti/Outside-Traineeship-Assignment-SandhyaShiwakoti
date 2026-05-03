@@ -1,0 +1,34 @@
+/* each news story inside the sidebar */
+.news-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* structure - font size */
+.news-item__title-link {
+  font-size: 1rem;
+  font-weight: 700;
+  transition: color var(--transition);
+}
+
+/* skin - white color, gold on hover */
+.news-item__title-link {
+  color: var(--white);
+}
+
+.news-item__title-link:hover {
+  color: var(--gold);
+}
+
+/* short description text */
+.news-item__description {
+  font-size: 0.9rem;
+  color: #a0a0b8;
+}
+
+/* line between news items */
+.news-item__divider {
+  border: none;
+  border-top: 1px solid #2a2a3e;
+}
