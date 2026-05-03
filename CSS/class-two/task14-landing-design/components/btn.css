@@ -1,0 +1,24 @@
+/* structure - shape and size */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background var(--transition);
+}
+
+/* skin - red background for primary button */
+.btn--primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background: var(--dark);
+}

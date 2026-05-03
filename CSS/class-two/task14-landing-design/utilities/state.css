@@ -1,0 +1,9 @@
+/* hides element */
+.is-hidden {
+  display: none;
+}
+
+/* shows element */
+.is-active {
+  display: block;
+}

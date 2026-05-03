@@ -1,0 +1,9 @@
+/* middle detail block always darker */
+.is-active {
+  background: var(--bg-block-dark);
+}
+
+/* hides any element */
+.is-hidden {
+  display: none;
+}

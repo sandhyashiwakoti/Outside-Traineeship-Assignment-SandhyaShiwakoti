@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card</title>
-    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -12,40 +11,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Main Profile Card -->
-    <div class="card">
-      <!-- Left Side -->
-      <div class="card-left">
+    <!-- profile card -->
+    <div class="profile-card">
+      <!-- left side - photo, name, role, buttons -->
+      <div class="profile-card__left">
+        <!-- avatar is its own block because it can be reused anywhere -->
         <div class="avatar">
           <img
-            class="avatar-image"
+            class="avatar__image"
             src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=200&h=200&fit=crop&crop=face"
             alt="Jessica Potter"
           />
         </div>
 
-        <div class="user-name">Jessica Potter</div>
-        <div class="user-role">Visual Artist</div>
+        <!-- profile-info is its own block for the name and role -->
+        <div class="profile-info__name">Jessica Potter</div>
+        <div class="profile-info__role">Visual Artist</div>
 
-        <div class="buttons">
-          <button class="btn">Follow</button>
-          <button class="btn">Message</button>
+        <!-- buttons wrapper -->
+        <div class="profile-card__buttons">
+          <!-- outline button fills on hover -->
+          <button class="btn btn--outline">Follow</button>
+          <!-- filled button stays same always -->
+          <button class="btn btn--filled">Message</button>
         </div>
       </div>
 
-      <!-- Right Side -->
-      <div class="card-right">
-        <div class="block">
-          <div class="number">523</div>
-          <div class="label">Posts</div>
+      <!-- right side - three detail blocks -->
+      <div class="profile-card__right">
+        <div class="detail-block">
+          <div class="detail-block__number">523</div>
+          <div class="detail-block__label">Posts</div>
         </div>
-        <div class="block">
-          <div class="number">1387</div>
-          <div class="label">Likes</div>
+
+        <!-- is-active keeps the middle block always darker -->
+        <div class="detail-block is-active">
+          <div class="detail-block__number">1387</div>
+          <div class="detail-block__label">Likes</div>
         </div>
-        <div class="block">
-          <div class="number">146</div>
-          <div class="label">Followers</div>
+
+        <div class="detail-block">
+          <div class="detail-block__number">146</div>
+          <div class="detail-block__label">Followers</div>
         </div>
       </div>
     </div>

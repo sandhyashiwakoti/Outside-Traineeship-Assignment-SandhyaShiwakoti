@@ -1,0 +1,13 @@
+/* all colors and sizes */
+:root {
+  --brown: #7a6658;
+  --brown-dark: #5c4d42;
+  --bg-block: #f2e8e0;
+  --bg-block-dark: #c9b8ac;
+  --bg-card: #ffffff;
+  --text-dark: #4a3f38;
+  --text-mid: #9a8880;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --radius: 16px;
+  --transition: 0.25s ease;
+}

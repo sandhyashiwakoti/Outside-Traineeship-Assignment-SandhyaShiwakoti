@@ -1,0 +1,67 @@
+/* hidden checkbox controls open and close */
+.menu-toggle {
+  display: none;
+}
+
+/* mobile menus */
+.mobile-menu {
+  position: fixed;
+  inset: 0 0 0 auto;
+  width: min(75vw, 320px);
+  background: var(--bg);
+  padding: 3rem 2rem;
+  transform: translateX(100%);
+  transition: transform 0.35s ease;
+  z-index: 200;
+}
+
+/* close x button */
+.mobile-menu__close {
+  display: block;
+  font-size: 1.4rem;
+  text-align: right;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* links aligned vertically */
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* structure */
+.mobile-menu__link {
+  font-size: 1.1rem;
+  transition: color var(--transition);
+}
+
+/* skin - color */
+.mobile-menu__link {
+  color: var(--text);
+}
+
+.mobile-menu__link:hover {
+  color: var(--red);
+}
+
+/* dark background behind the open menu */
+.dark-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 150;
+  cursor: pointer;
+}
+
+/* when checkbox is checked show the menu and overlay */
+.menu-toggle:checked ~ .mobile-menu {
+  transform: translateX(0);
+}
+
+.menu-toggle:checked ~ .dark-overlay {
+  display: block;
+}

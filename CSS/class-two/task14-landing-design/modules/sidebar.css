@@ -1,0 +1,30 @@
+/* structure - layout of dark sidebar */
+.sidebar {
+  padding: 2rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* skin - dark background */
+.sidebar {
+  background: var(--sidebar-bg);
+  color: var(--white);
+}
+
+/* new heading in gold */
+.sidebar__heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+/* sidebar in column on desktop */
+@media (min-width: 64em) {
+  .sidebar {
+    display: flex;
+    width: 300px;
+    flex-shrink: 0;
+    align-self: flex-start;
+  }
+}

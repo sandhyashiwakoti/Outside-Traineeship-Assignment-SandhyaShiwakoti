@@ -1,0 +1,9 @@
+/* centers card on the page */
+body {
+  background: linear-gradient(to right, #f4eb42, #af5e07);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}

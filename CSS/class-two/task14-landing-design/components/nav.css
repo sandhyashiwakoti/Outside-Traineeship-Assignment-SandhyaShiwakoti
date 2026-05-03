@@ -1,0 +1,31 @@
+/* hidden on mobile, shown on desktop */
+.nav {
+  display: none;
+}
+
+/* links */
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+/* structure - size and spacing */
+.nav__link {
+  font-size: 0.95rem;
+  transition: color var(--transition);
+}
+
+/* skin - color */
+.nav__link {
+  color: var(--text);
+}
+
+.nav__link:hover {
+  color: var(--red);
+}
+
+@media (min-width: 64em) {
+  .nav {
+    display: block;
+  }
+}
