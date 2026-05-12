@@ -1,0 +1,45 @@
+/* reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* app container */
+#app {
+  padding: 20px;
+  background: #e4e4e4;
+  min-height: 100vh;
+}
+
+/* add box button */
+#addBoxBtn {
+  padding: 10px 20px;
+  background: #5a3a1a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#addBoxBtn:hover {
+  background: #3d2710;
+}
+
+/* box container - all generated boxes in a row wrapping layout */
+#boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* each dynamically created box */
+.box {
+  width: 400px;
+  height: 400px;
+}
