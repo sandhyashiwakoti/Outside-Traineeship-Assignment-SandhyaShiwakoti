@@ -1,0 +1,75 @@
+/* reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* logo */
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* toggle button */
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* hide close icon */
+.icon.close {
+  display: none;
+}
+
+/* when menu is open, swap icons */
+.toggle-btn.open .hamburger {
+  display: none;
+}
+
+.toggle-btn.open .close {
+  display: inline;
+}
+
+/* content area */
+.content-area {
+  position: relative;
+  height: calc(100vh - 53px);
+}
+
+/* offcanvas sidebar */
+.off-canvas {
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 30%;
+  height: 100%;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  transition: left 0.3s ease;
+}
+
+/* slide in from left when open */
+.off-canvas.open {
+  left: 0;
+}
