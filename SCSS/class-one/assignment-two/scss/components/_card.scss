@@ -6,7 +6,6 @@
   background-color: $card-bg;
   border-radius: $card-border-radius;
   box-shadow: $card-shadow;
-  margin-bottom: 24px;
 
   // mixin handles the media query internally
   @include responsive-padding(16px, 32px);
