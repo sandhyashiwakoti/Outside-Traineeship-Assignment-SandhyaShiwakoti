@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// main insights section
+.insights {
+  padding: $section-padding;
+  background-color: $color-bg;
+
+  // section heading
+  &__heading {
+    font-size: $heading-size;
+    font-weight: $heading-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $heading-letter-spacing;
+    color: $color-heading;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  // all cards in row
+  &__cards {
+    @include flex-row(24px);
+    justify-content: center;
+    margin-bottom: 48px;
+
+    // stack cards on tablet
+    @include responsive("tablet") {
+      // this style is passed to mixin and applied inside media query
+      flex-wrap: wrap;
+    }
+
+    // stack cards on mobile
+    @include responsive("mobile") {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // button wrapper - centers the button
+  &__footer {
+    @include flex-center;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// view all insights button
+.btn {
+  // bring flex center styles from mixins to center text and icon
+  @include flex-center;
+  background-color: $color-btn-bg;
+  border-radius: $btn-border-radius;
+  padding: $btn-padding;
+  font-size: $btn-size;
+  font-weight: $btn-weight;
+  line-height: $btn-line-height;
+  font-family: $font-family;
+  color: $color-heading;
+  border: none;
+  cursor: pointer;
+  gap: 8px;
+  text-decoration: none;
+
+  // lighter on hover
+  &:hover {
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,8 @@
+// importing all scss files into one main file to compile into css
+@use "base/reset";
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "components/badge";
+@use "components/button";
+@use "components/card";
+@use "layout/insights";

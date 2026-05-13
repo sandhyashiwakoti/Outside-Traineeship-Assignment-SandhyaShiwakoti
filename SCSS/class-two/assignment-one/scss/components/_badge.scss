@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as *;
+
+// badge - on top of card image
+.badge {
+  background-color: $color-badge-bg;
+  border-radius: $badge-border-radius;
+  padding: $badge-padding;
+  font-size: $badge-size;
+  font-weight: $badge-weight;
+  line-height: $badge-line-height;
+  color: $color-heading;
+  display: inline-block;
+}
