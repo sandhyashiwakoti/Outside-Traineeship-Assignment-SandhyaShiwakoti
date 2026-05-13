@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f3f4f6;
+  padding: 10px;
+}
+
+.m-1 {
+  margin: 4px;
+}
+
+.m-2 {
+  margin: 8px;
+}
+
+.m-3 {
+  margin: 16px;
+}
+
+.m-4 {
+  margin: 24px;
+}
+
+.m-5 {
+  margin: 32px;
+}
+
+.m-6 {
+  margin: 48px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .card {
+    padding: 32px;
+  }
+}
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.card p {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 64px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

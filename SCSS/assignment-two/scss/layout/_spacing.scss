@@ -1,0 +1,15 @@
+@use "sass:list";
+@use "../abstracts/variables" as *;
+
+// counter for index since @each doesn't give index
+$counter: 1;
+
+// loop through spacing scale list to generate .m-1 through .m-6 margin classes
+@each $space in $spacing-scale {
+  .m-#{$counter} {
+    margin: $space;
+  }
+
+  // increase counter each loop
+  $counter: $counter + 1;
+}

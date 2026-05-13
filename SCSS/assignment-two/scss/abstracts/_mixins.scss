@@ -1,0 +1,12 @@
+@use "./variables" as *;
+
+// takes mobile and desktop padding, handles media query internally
+@mixin responsive-padding($mobile, $desktop) {
+  // mobile first - default padding
+  padding: $mobile;
+
+  // use desktop padding on 768px and above screens
+  @media (min-width: $breakpoint-desktop) {
+    padding: $desktop;
+  }
+}
