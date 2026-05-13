@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// single logo card
+.card {
+  background-color: $card-bg;
+  width: $card-width;
+  height: $card-height;
+  border-radius: $card-border-radius;
+
+  // centers logo inside the card using flex-center mixin
+  @include flex-center;
+
+  // logo image inside card
+  &__logo {
+    width: $logo-width;
+    height: $logo-height;
+    opacity: $logo-opacity;
+  }
+}

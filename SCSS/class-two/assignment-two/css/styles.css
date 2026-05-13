@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f6f7fb;
+  color: #202020;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 339px;
+  height: 231px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__logo {
+  width: 229px;
+  height: 131px;
+  opacity: 0.7;
+}
+
+.procurement {
+  padding: 80px 120px;
+  background-color: #f6f7fb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.procurement__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.procurement__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  color: #00a599;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.procurement__heading {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #202020;
+}
+.procurement__cards {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .procurement__cards {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .procurement__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
