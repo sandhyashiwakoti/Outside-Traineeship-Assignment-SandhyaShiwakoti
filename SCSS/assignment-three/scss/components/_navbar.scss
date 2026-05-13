@@ -1,0 +1,65 @@
+// using variables from abstracts and creating styles for navbar component
+@use "../abstracts/variables" as *;
+
+// main navbar block that consists every styling
+.navbar {
+  background-color: $nav-bg;
+  padding: $nav-padding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // logo inside navbar
+  .navbar__logo {
+    color: $nav-text;
+    font-size: $nav-logo-size;
+    font-weight: 700;
+    text-decoration: none;
+
+    // logo hover
+    &:hover {
+      color: $nav-hover-color;
+    }
+  }
+
+  // level 1 - ul list that wraps all nav items
+  ul {
+    list-style: none;
+    display: flex;
+    gap: $nav-link-gap;
+
+    // level 2 - li each nav item
+    li {
+      display: inline-block;
+
+      // level 3 - a link inside each nav item
+      a {
+        color: $nav-link-color;
+        font-size: $nav-font-size;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+
+        // hover - shows purple color font and purple underline
+        &:hover {
+          color: $nav-hover-color;
+          border-bottom-color: $nav-hover-color;
+        }
+
+        // focus - for keyboard navigation, purple outline around link
+        &:focus {
+          outline: 2px solid $nav-focus-outline;
+          outline-offset: 4px;
+          border-radius: 2px;
+        }
+
+        // active - when link is being clicked, link turns white
+        &:active {
+          color: $nav-active-color;
+        }
+      }
+    }
+  }
+}
