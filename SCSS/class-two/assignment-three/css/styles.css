@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #093944;
+  color: #ffffff;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 56px;
+  border-radius: 48px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.accordion {
+  width: 100%;
+}
+.accordion details {
+  border-bottom: 1px solid #20545f;
+  padding: 24px 0;
+}
+.accordion details[open] summary::after {
+  transform: rotate(-135deg);
+  top: 6px;
+}
+.accordion summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accordion summary__question {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+}
+.accordion summary::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-right: 1px solid #00a599;
+  border-bottom: 1px solid #00a599;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+.accordion__question {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+}
+.accordion__answer {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #90a5a9;
+  padding-top: 16px;
+}
+
+.faq {
+  padding: 80px 149px;
+  background-color: #093944;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+.faq__left {
+  width: 321px;
+  flex-shrink: 0;
+}
+.faq__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  color: #00a599;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.faq__heading {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.faq__right {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .faq {
+    flex-direction: column;
+    padding: 40px 24px;
+  }
+  .faq__left {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .faq {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

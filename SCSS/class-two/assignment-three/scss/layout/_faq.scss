@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// faq section
+.faq {
+  padding: $section-padding;
+  background-color: $color-bg;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+
+  // left side - label, heading, button
+  &__left {
+    width: 321px;
+    flex-shrink: 0;
+  }
+
+  // faq label
+  &__label {
+    font-size: $label-size;
+    font-weight: $label-weight;
+    line-height: $label-line-height;
+    letter-spacing: $label-letter-spacing;
+    color: $color-label;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  // main heading
+  &__heading {
+    font-size: $heading-size;
+    font-weight: $heading-weight;
+    line-height: $heading-line-height;
+    color: $color-white;
+    margin-bottom: 40px;
+  }
+
+  // right side - accordion
+  &__right {
+    flex: 1;
+  }
+
+  // stack left and right on top of each other on mobile
+  @include responsive("mobile") {
+    flex-direction: column;
+    padding: 40px 24px;
+
+    &__left {
+      width: 100%;
+    }
+  }
+
+  // reduce padding on tablet
+  @include responsive("tablet") {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+}

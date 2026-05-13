@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// faq button styles
+.btn {
+  @include flex-center;
+  width: $btn-width;
+  height: $btn-height;
+  border-radius: $btn-border-radius;
+  border: 1px solid $color-white;
+  background: transparent;
+  color: $color-white;
+  font-family: $font-family;
+  font-size: $btn-font-size;
+  font-weight: $answer-weight;
+  cursor: pointer;
+  text-decoration: none;
+
+  // hover effect
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

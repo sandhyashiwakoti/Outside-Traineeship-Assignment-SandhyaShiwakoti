@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// accordion wrapper - holds all questions
+.accordion {
+  width: 100%;
+
+  // details - accordion item
+  details {
+    border-bottom: 1px solid $color-divider;
+    padding: 24px 0;
+
+    &[open] summary::after {
+      transform: rotate(-135deg); // arrow points up when open
+      top: 6px;
+    }
+  }
+
+  // summary -clickable question row
+  summary {
+    @include flex-between;
+    cursor: pointer;
+
+    // question text
+    &__question {
+      font-size: $question-size;
+      font-weight: $question-weight;
+      line-height: $question-line-height;
+      color: $color-question;
+    }
+
+    // custom arrow using css - points down by default
+    &::after {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-right: 1px solid $color-arrow;
+      border-bottom: 1px solid $color-arrow;
+      transform: rotate(45deg);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  // question text inside summary
+  &__question {
+    font-size: $question-size;
+    font-weight: $question-weight;
+    line-height: $question-line-height;
+    color: $color-question;
+  }
+
+  // answer text shown when details is open
+  &__answer {
+    font-size: $answer-size;
+    font-weight: $answer-weight;
+    line-height: $answer-line-height;
+    color: $color-answer;
+    padding-top: 16px;
+  }
+}
