@@ -1,0 +1,55 @@
+// to use map.get() to read values from the maps
+@use "sass:map";
+
+// importing variables and mixins to use them directly here
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// placeholder selector for base button styles, extended by all button variants
+%btn-base {
+  border-radius: $btn-border-radius;
+  font-weight: $btn-font-weight;
+  cursor: $btn-cursor;
+  display: inline-block;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s;
+  text-decoration: none;
+}
+
+// main btn class
+.btn {
+  // copy all base styles from placeholder
+  @extend %btn-base;
+
+  // using nesting to add hover and disabled states to all buttons
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+// loop through variants map to generate .btn-primary, .btn-danger, .btn-ghost
+@each $name, $values in $btn-variants {
+  .btn-#{$name} {
+    // get all base styles from .btn class
+    @extend .btn;
+
+    // use mixins to get variant styles and default md size styles
+    @include button-variant($name);
+    @include button-size("md");
+  }
+}
+
+// override default md styles with sm and lg values
+.btn-sm {
+  @include button-size("sm");
+}
+
+.btn-lg {
+  @include button-size("lg");
+}

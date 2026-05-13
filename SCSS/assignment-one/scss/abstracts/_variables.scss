@@ -1,0 +1,39 @@
+// base button styles
+$btn-border-radius: 4px;
+$btn-font-weight: 600;
+$btn-cursor: pointer;
+
+// variants map - each has bg, color and border
+$btn-variants: (
+  "primary": (
+    "bg": #7c3aed,
+    "color": white,
+    "border": #6d28d9,
+  ),
+  "danger": (
+    "bg": #dc2626,
+    "color": white,
+    "border": #b91c1c,
+  ),
+  "ghost": (
+    "bg": transparent,
+    "color": #7c3aed,
+    "border": #7c3aed,
+  ),
+);
+
+// sizes map - each has padding and font size
+$btn-sizes: (
+  "sm": (
+    "padding": 6px 12px,
+    "font-size": 0.8rem,
+  ),
+  "md": (
+    "padding": 10px 20px,
+    "font-size": 1rem,
+  ),
+  "lg": (
+    "padding": 14px 28px,
+    "font-size": 1.2rem,
+  ),
+);

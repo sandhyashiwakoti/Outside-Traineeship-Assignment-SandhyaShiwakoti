@@ -1,0 +1,20 @@
+// using sass:map so we can use map.get()
+@use "sass:map";
+@use "variables" as *;
+
+// accepts variants name, looks up variant in the map and outputs bg, color, border
+@mixin button-variant($variant-name) {
+  $variant: map.get($btn-variants, $variant-name);
+
+  background-color: map.get($variant, "bg");
+  color: map.get($variant, "color");
+  border: 1px solid map.get($variant, "border");
+}
+
+// accepts size name, looks up size in the map and outputs padding and font size
+@mixin button-size($size-name) {
+  $size: map.get($btn-sizes, $size-name);
+
+  padding: map.get($size, "padding");
+  font-size: map.get($size, "font-size");
+}

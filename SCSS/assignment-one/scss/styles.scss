@@ -1,0 +1,6 @@
+// importing all the scss files in main scss file
+@use "base/reset";
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "components/buttons";
+@use "layout/demo";
