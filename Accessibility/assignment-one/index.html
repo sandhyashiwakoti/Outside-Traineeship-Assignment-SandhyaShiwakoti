@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Contact us</h1>
+      <p class="mandatory-note">(*) Asterisk denotes mandatory fields</p>
+
+      <!-- main contact form -->
+      <form class="contact-form" novalidate>
+        <!-- two column grid for fields on left and textarea on right -->
+        <div class="form-fields">
+          <!-- left side: all input fields -->
+          <div class="fields-section">
+            <!-- First row - first name and last name -->
+            <div class="field-row">
+              <!-- first name field -->
+              <div class="field-group">
+                <!-- label is linked to input using "for" and "id" -->
+                <!-- aria-hidden="true" hides the asterisk from screen readers -->
+                <label for="first-name"
+                  >First name
+                  <span class="required-star" aria-hidden="true">*</span></label
+                >
+                <!-- aria-required tells that the field is required and aria-describedby describes the error messages (to screen readers) -->
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="first-name-error"
+                />
+                <!-- error message is hidden by default and shown when field is left empty -->
+                <p id="first-name-error" class="error-message">
+                  Please enter your first name.
+                </p>
+              </div>
+
+              <!-- last name field -->
+              <div class="field-group">
+                <label for="last-name"
+                  >Last name
+                  <span class="required-star" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="last-name-error"
+                />
+                <p id="last-name-error" class="error-message">
+                  Please enter your last name.
+                </p>
+              </div>
+            </div>
+
+            <!-- Second row - work email and company -->
+            <div class="field-row">
+              <!-- work email field -->
+              <div class="field-group">
+                <label for="work-email"
+                  >Work email
+                  <span class="required-star" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="email"
+                  id="work-email"
+                  name="work-email"
+                  required
+                  aria-required="true"
+                  aria-describedby="work-email-error"
+                />
+                <p id="work-email-error" class="error-message">
+                  Please enter a valid work email.
+                </p>
+              </div>
+
+              <!-- company field -->
+              <div class="field-group">
+                <label for="company"
+                  >Company
+                  <span class="required-star" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  required
+                  aria-required="true"
+                  aria-describedby="company-error"
+                />
+                <p id="company-error" class="error-message">
+                  Please enter your company name.
+                </p>
+              </div>
+            </div>
+
+            <!-- Third row - job title and phone number -->
+            <div class="field-row">
+              <!-- job title field -->
+              <div class="field-group">
+                <label for="job-title"
+                  >Job title
+                  <span class="required-star" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="job-title"
+                  name="job-title"
+                  required
+                  aria-required="true"
+                  aria-describedby="job-title-error"
+                />
+                <p id="job-title-error" class="error-message">
+                  Please enter your job title.
+                </p>
+              </div>
+
+              <!-- phone number field -->
+              <div class="field-group">
+                <!-- phone is optional so no required or aria-required -->
+                <label for="phone">Phone number (optional)</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+            </div>
+
+            <!-- checkbox section -->
+            <div class="checkbox-section">
+              <!-- privacy agreement checkbox -->
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="privacy-agree"
+                  name="privacy-agree"
+                  required
+                  aria-required="true"
+                  aria-describedby="privacy-error"
+                />
+                <label for="privacy-agree">
+                  I agree to the use or processing of my personal information by
+                  Persistent Systems for the purpose of fulfilling this request
+                  and in accordance with
+                  <a href="#" class="inline-link">privacy notice</a>.
+                </label>
+                <p id="privacy-error" class="error-message">
+                  You must agree to the privacy policy.
+                </p>
+              </div>
+
+              <!-- newsletter checkbox -->
+              <div class="checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter" />
+                <label for="newsletter">
+                  Subscribe me to Persistent's latest thought leadership, blogs
+                  and updates.
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- right side: message textarea -->
+          <div class="message-section">
+            <div class="field-group">
+              <!-- textarea also needs a label linked by for and id -->
+              <label for="message" class="visually-hidden"
+                >How can we help you?</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                placeholder="How can we help you?"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <p class="email-note">
+              You can also email us directly at
+              <a href="mailto:sujit@outside.studio" class="inline-link"
+                >sujit@outside.studio</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- submit button -->
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
