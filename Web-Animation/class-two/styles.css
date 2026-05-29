@@ -1,0 +1,77 @@
+/* reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* page background and font */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 60px 20px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 4 column grid for photos */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+/* each image placeholder box */
+.card {
+  background-color: #ccc;
+  height: 260px;
+  border-radius: 6px;
+}
+
+/* space below text area */
+.content-area {
+  margin-bottom: 60px;
+}
+
+/* paragraph */
+.para {
+  color: #aaa;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* before animation: cards are invisible */
+.hidden-box {
+  opacity: 0;
+  transform: scaleY(0) scaleX(0.85) translateY(40px);
+  transform-origin: bottom center;
+transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1); 
+opacity 1.2s ease;
+}
+
+/* when card is visible, scale it up */
+.hidden-box.show {
+  opacity: 1;
+  transform: scaleY(1) scaleX(1) translateY(0);
+}
+
+/* text starts invisible and slightly down */
+.hidden-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.7s ease;
+}
+
+/* when text is visible, slide it up and show it */
+.hidden-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
