@@ -90,20 +90,23 @@ $mobile: 767.98px;
   max-width: 524px;
   box-sizing: border-box;
   padding-top: 96px;
-  padding-left: 80px;
+  padding-left: 0;
   padding-bottom: 96px;
+  margin-left: -40px;
   margin-right: auto;
 
   @media (max-width: $tablet) {
     max-width: 470px;
     padding-top: 72px;
-    padding-left: 48px;
+    padding-left: 0;
     padding-bottom: 72px;
+    margin-left: -24px;
   }
 
   @media (max-width: $mobile) {
     max-width: 100%;
     padding: 40px 20px;
+    margin-left: 0;
   }
 }
 

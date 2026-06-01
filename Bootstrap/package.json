@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/scss/main.scss dist/css/main.css"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/main.scss src/main.css",
+    "build": "sass src/main.scss src/main.css",
+    "watch": "sass --watch src/main.scss:src/main.css"
   },
   "keywords": [],
   "author": "",
