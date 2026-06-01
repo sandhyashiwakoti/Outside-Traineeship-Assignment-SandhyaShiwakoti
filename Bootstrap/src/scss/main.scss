@@ -1,0 +1,491 @@
+$primary: #98cb97;
+$secondary: #ffffff;
+$body-color: #121313;
+$font-family-base: "Poppins", sans-serif;
+
+$btn-secondary-color: #121313;
+$btn-secondary-bg: #ffffff;
+$btn-secondary-border-color: #121313;
+$btn-border-width: 2px;
+
+$border-radius: 10px;
+$border-radius-lg: 16px;
+$border-radius-pill: 25px;
+
+$box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$font-serif: "Cormorant Garamond", serif;
+$brand-green: #98cb97;
+$faq-bg: #080b11;
+$footer-bg: #080b11;
+$faq-gold: #ffbf00;
+$tablet: 991.98px;
+$mobile: 767.98px;
+
+.nav-link--active {
+  background-color: #f3f2f1;
+  border-radius: 6px;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 62vw;
+  min-height: 420px;
+  max-height: 760px;
+
+  @media (max-width: $tablet) {
+    height: 620px;
+    min-height: 620px;
+    max-height: none;
+  }
+
+  @media (max-width: $mobile) {
+    height: 640px;
+    min-height: 640px;
+  }
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
+  transform: scale(1.5);
+  transform-origin: left bottom;
+
+  @media (max-width: $tablet) {
+    transform: scale(1.25);
+    transform-origin: center bottom;
+  }
+
+  @media (max-width: $mobile) {
+    transform: scale(1.08);
+    object-position: 58% bottom;
+  }
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+
+  @media (max-width: $tablet) {
+    align-items: center;
+  }
+  @media (max-width: $mobile) {
+    align-items: center;
+  }
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 524px;
+  box-sizing: border-box;
+  padding-top: 96px;
+  padding-left: 80px;
+  padding-bottom: 96px;
+  margin-right: auto;
+
+  @media (max-width: $tablet) {
+    max-width: 470px;
+    padding-top: 72px;
+    padding-left: 48px;
+    padding-bottom: 72px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 100%;
+    padding: 40px 20px;
+  }
+}
+
+.hero-title {
+  max-width: 16ch;
+  font-size: 65.6px;
+  line-height: 1.06;
+  font-weight: 400;
+  margin: 0;
+
+  @media (max-width: $tablet) {
+    font-size: 52px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 42px;
+  }
+}
+
+.hero-copy {
+  max-width: 40ch;
+  font-size: 18.4px;
+  font-weight: 500;
+  line-height: 1.45;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+
+  @media (max-width: $tablet) {
+    font-size: 17px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 22px !important;
+    white-space: nowrap;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      padding: 7px 16px !important;
+    }
+  }
+}
+
+.brand-logo {
+  max-height: 32px;
+  width: auto;
+
+  @media (max-width: $tablet) {
+    max-height: 28px;
+  }
+  @media (max-width: $mobile) {
+    max-height: 24px;
+  }
+}
+
+.cards-wide-gap {
+  --bs-gutter-x: 80px;
+
+  @media (max-width: $tablet) {
+    --bs-gutter-x: 32px;
+  }
+  @media (max-width: $mobile) {
+    --bs-gutter-x: 24px;
+  }
+}
+
+.sectionHQ {
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 80px;
+
+    @media (max-width: $tablet) {
+      padding-bottom: 64px;
+    }
+    @media (max-width: $mobile) {
+      padding-bottom: 48px;
+    }
+  }
+
+  &__title {
+    font-family: $font-serif;
+
+    @media (max-width: $tablet) {
+      font-size: 38px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 32px;
+    }
+  }
+
+  &__casecoach {
+    background-color: $brand-green;
+  }
+
+  &__content {
+    font-weight: 400;
+    max-width: 900px;
+    margin-inline: auto;
+
+    @media (max-width: $tablet) {
+      font-size: 36px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 28px;
+    }
+  }
+
+  &__preview {
+    max-width: 70vw;
+
+    @media (max-width: $tablet) {
+      max-width: 82vw;
+    }
+    @media (max-width: $mobile) {
+      max-width: 92vw;
+    }
+  }
+}
+
+.speechbubble {
+  width: 320px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+
+  @media (max-width: $tablet) {
+    width: 240px;
+    right: 12%;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.08;
+    margin: 0;
+
+    @media (max-width: $tablet) {
+      font-size: 30px;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0000ff !important;
+}
+
+.section-tag {
+  border-radius: 4px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 15.2px;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  padding: 8.8px 24px !important;
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 13px;
+  }
+}
+
+.bg-blue {
+  background-color: #acd4f1;
+}
+.bg-red {
+  background-color: #ff9999;
+}
+.bg-purple {
+  background-color: #cbc3e8;
+}
+
+.section-divider {
+  width: 256px;
+  transform: translateY(-10px);
+
+  @media (max-width: $mobile) {
+    width: 192px;
+  }
+}
+
+.faq-section {
+  background-color: $faq-bg;
+  color: #ffffff;
+}
+
+.faq-title {
+  color: $faq-gold;
+  letter-spacing: 0.01em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 1;
+
+  @media (max-width: $tablet) {
+    font-size: 82px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 58px;
+  }
+}
+
+.faq-accordion {
+  .accordion-item {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .accordion-button {
+    background: transparent;
+    color: #f8f9fa;
+    box-shadow: none;
+    padding: 32px 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+
+    @media (max-width: $tablet) {
+      padding: 24px 0;
+      font-size: 20px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 18px;
+    }
+
+    &::after {
+      background-image: none;
+      content: "+";
+      color: #ffffff;
+      font-size: 35.2px;
+      width: auto;
+      height: auto;
+      transform: none;
+      line-height: 1;
+    }
+
+    &:not(.collapsed)::after {
+      content: "x";
+      transform: none;
+    }
+
+    &:not(.collapsed) {
+      background: transparent;
+      color: #ffffff;
+    }
+  }
+
+  .accordion-body {
+    color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.35;
+    padding: 0 16px 35.2px;
+    max-width: 90%;
+
+    @media (max-width: $tablet) {
+      max-width: 100%;
+      padding: 0 0 28px;
+      font-size: 17px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+    }
+  }
+}
+
+.footer-section {
+  background-color: $footer-bg;
+  color: #d7dae1;
+}
+
+.footer-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  @media (max-width: $tablet) {
+    font-size: 20px;
+  }
+}
+
+.footer-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #d5d9e2;
+
+  @media (max-width: $tablet) {
+    font-size: 16px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
+}
+
+.footer-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #909090;
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
+  }
+}
+
+.footer-link {
+  font-family: "Poppins", sans-serif;
+  color: #d5d9e2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+
+  @media (max-width: $tablet) {
+    font-size: 15px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.footer-copy {
+  font-family: "Poppins", sans-serif;
+  color: #8b92a3;
+  font-size: 18px;
+  font-weight: 400;
+
+  @media (max-width: $tablet) {
+    font-size: 16px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+}

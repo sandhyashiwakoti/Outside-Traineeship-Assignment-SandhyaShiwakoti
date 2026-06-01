@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section – AI Enablement</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+
+  <body>
+    <!--  NAVBAR  -->
+    <nav
+      class="navbar navbar-expand-xxl navbar-light py-4 sticky-top bg-white border-bottom shadow-sm"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="src/images/logo.png" alt="Section" height="32" />
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto gap-2 gap-lg-4 mt-3 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-link--active" href="#platform">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Individuals
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Reports</a></li>
+                <li><a class="dropdown-item" href="#">Playbooks</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-3 mt-lg-0">
+            <button class="btn btn-dark rounded-pill px-4">Log In</button>
+            <button class="btn btn-outline-dark rounded-pill px-4">
+              Book a demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!--  HERO  -->
+      <section class="hero-section" id="home">
+        <img src="src/images/hero-bg.png" class="hero-image" alt="" />
+
+        <div class="container hero-overlay">
+          <div class="hero-content">
+            <h1 class="hero-title">Turn every employee into an AI innovator</h1>
+            <p class="hero-copy">
+              AI coaching personalized to every individual – so your whole
+              workforce finds real value, not just the early adopters.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-dark rounded-pill">Request Demo</button>
+              <button class="btn btn-light border border-dark rounded-pill">
+                Try the Coach
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  TRUSTED BY  -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center text-center gy-4">
+            <div class="col-lg-3 text-center text-lg-start">
+              <h2 class="fw-normal display-6">Trusted By</h2>
+            </div>
+            <div class="col-lg-9">
+              <div
+                class="row brand-row row-cols-2 row-cols-md-3 row-cols-lg-5 align-items-center text-center g-4 g-lg-5"
+              >
+                <div class="col">
+                  <img
+                    src="src/images/moderna.png"
+                    class="brand-logo"
+                    alt="Moderna"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="src/images/doordash.png"
+                    class="brand-logo"
+                    alt="DoorDash"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="src/images/google.png"
+                    class="brand-logo"
+                    alt="Google"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="src/images/uber.png"
+                    class="brand-logo"
+                    alt="Uber"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="src/images/user-testing.png"
+                    class="brand-logo"
+                    alt="UserTesting"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  SECTION HQ  -->
+      <section
+        class="sectionHQ position-relative overflow-hidden pb-5"
+        id="platform"
+      >
+        <img src="src/images/carousel-bg.png" class="sectionHQ__bg" alt="" />
+
+        <div class="container text-center sectionHQ__inner">
+          <h3 class="sectionHQ__title display-6 pt-5 fw-normal">Section HQ</h3>
+
+          <div
+            class="sectionHQ__casecoach px-3 py-2 mt-2 fw-light rounded-2 d-inline-block"
+          >
+            Use case coach
+          </div>
+
+          <h2 class="sectionHQ__content display-5 mt-3">
+            Discover and share hyper-relevant<br />AI use cases
+          </h2>
+
+          <!-- Swiper slider -->
+          <div class="swiper sectionHQ__preview mt-5 mx-auto">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide position-relative">
+                <img
+                  src="src/images/slide-1.png"
+                  class="d-block w-100 rounded-3 opacity-75"
+                  alt="Slide 1"
+                />
+                <div class="speechbubble">
+                  <img
+                    src="src/images/thinking-bubble-bg.png"
+                    class="w-100"
+                    alt=""
+                  />
+                  <h2 class="speechbubble__text">
+                    Bring the<br />goal. i'll bring<br />the prompts.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide position-relative">
+                <img
+                  src="src/images/slide-1.png"
+                  class="d-block w-100 rounded-3 opacity-75"
+                  alt="Slide 2"
+                />
+                <div class="speechbubble">
+                  <img
+                    src="src/images/thinking-bubble-bg.png"
+                    class="w-100"
+                    alt=""
+                  />
+                  <h2 class="speechbubble__text">
+                    Bring the<br />goal. i'll bring<br />the prompts.
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper-slide position-relative">
+                <img
+                  src="src/images/slide-1.png"
+                  class="d-block w-100 rounded-3 opacity-75"
+                  alt="Slide 3"
+                />
+                <div class="speechbubble">
+                  <img
+                    src="src/images/thinking-bubble-bg.png"
+                    class="w-100"
+                    alt=""
+                  />
+                  <h2 class="speechbubble__text">
+                    Bring the<br />goal. i'll bring<br />the prompts.
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination position-relative mt-3"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--  REPORTED OUTCOMES  -->
+      <section class="py-5 overflow-hidden" id="outcomes">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="mb-2 fs-5 mt-4">Reported outcomes</p>
+            <h2 class="display-5 fw-normal m-0 p-0">
+              Faster proficiency.
+              <span>More frequent</span>, high-value use.
+            </h2>
+            <img
+              src="src/images/divider.png"
+              class="section-divider img-fluid"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="row cards-wide-gap justify-content-center gy-5 px-3 px-md-4 px-lg-5"
+          >
+            <div class="col-md-6 col-lg-4">
+              <div class="bg-white rounded-5 shadow p-5 h-100 text-center">
+                <h2 class="display-4 fw-normal">1 hour</h2>
+                <p>
+                  <strong>to AI proficiency</strong> vs. 3+ hours for
+                  traditional courses
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="bg-white rounded-5 shadow p-5 h-100 text-center">
+                <h2 class="display-4 fw-normal">2x</h2>
+                <p class="mb-0">
+                  <strong>AI usage rates,</strong> among employees who are
+                  coached by Section
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="bg-white rounded-5 shadow p-5 h-100 text-center">
+                <h2 class="display-4 fw-normal">Three</h2>
+                <p class="mb-0">
+                  <strong>Use cases per employee,</strong> generated through the
+                  platform
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--  MORE FROM SECTION  -->
+          <div class="text-center mb-5 my-5 pt-5">
+            <p class="mb-2">Explore</p>
+            <h2 class="display-5 fw-normal">More from Section</h2>
+            <img
+              src="src/images/divider.png"
+              class="section-divider img-fluid"
+              alt=""
+            />
+          </div>
+
+          <div class="row gy-4 justify-content-center" id="services">
+            <div class="col-md-6 col-lg-4">
+              <div class="bg-white rounded-5 shadow-sm p-5 h-100 text-center">
+                <div class="section-tag d-inline-block mb-4 bg-blue">
+                  SEE SECTION HQ
+                </div>
+                <p>
+                  The AI Enablement Command Center. Unifies proficiency, usage,
+                  and org data with prescriptive actions.
+                </p>
+                <a href="#" class="text-dark">Learn More</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="bg-white rounded-5 shadow-sm p-5 h-100 text-center">
+                <div class="section-tag d-inline-block mb-4 bg-red">
+                  RUN AI BENCHMARKING
+                </div>
+                <p>
+                  A time-boxed diagnostic that baselines proficiency and
+                  adoption, and delivers a clear visual report.
+                </p>
+                <a href="#" class="text-dark">Learn more</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="bg-white rounded-5 shadow-sm p-5 h-100 text-center">
+                <div class="section-tag d-inline-block mb-4 bg-purple">
+                  EXPLORE ADVISORY SERVICES
+                </div>
+                <p>
+                  Advisory support for AI operating model, governance,
+                  enablement, and playbook execution.
+                </p>
+                <a href="#" class="text-dark">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  FAQ  -->
+      <section class="faq-section py-5 py-lg-5" id="faq">
+        <div class="container">
+          <h2 class="faq-title mb-4 mb-lg-5">FAQs</h2>
+
+          <div
+            class="accordion accordion-flush faq-accordion"
+            id="faqAccordion"
+          >
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqOne"
+                >
+                  Can you prove ROI?
+                </button>
+              </h3>
+              <div
+                id="faqOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper
+                  venenatis. Fermentum sulla craspor ttitore ismod nulla.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqTwo"
+                >
+                  What's "proficiency," exactly?
+                </button>
+              </h3>
+              <div
+                id="faqTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper
+                  venenatis.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqThree"
+                >
+                  How do you integrate with our AI tools and HR systems?
+                </button>
+              </h3>
+              <div
+                id="faqThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper
+                  venenatis.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqFour"
+                >
+                  Is cross-company benchmarking included?
+                </button>
+              </h3>
+              <div
+                id="faqFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper
+                  venenatis.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqFive"
+                >
+                  Is this redundant with vendor usage analytics (Copilot,
+                  ChatGPT, etc.)?
+                </button>
+              </h3>
+              <div
+                id="faqFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper
+                  venenatis.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqSix"
+                >
+                  Is HQ a dashboard?
+                </button>
+              </h3>
+              <div
+                id="faqSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper
+                  venenatis.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqSeven"
+                >
+                  What's included in HQ vs services?
+                </button>
+              </h3>
+              <div
+                id="faqSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Nibh quisque suscipit fermentum netus nulla cras porttitor
+                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper
+                  venenatis.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  FOOTER  -->
+    <footer class="footer-section pt-5 pb-5">
+      <div class="container">
+        <div class="row gy-4 gy-lg-0">
+          <div class="col-lg-4">
+            <h3 class="footer-brand mb-3">Section</h3>
+            <p class="footer-desc mb-0">
+              Turning AI investment<br />into behavior change<br />and
+              measurable ROI.
+            </p>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <p class="footer-heading mb-3">PLATFORM</p>
+            <ul class="list-unstyled d-grid gap-2 mb-0">
+              <li><a href="#" class="footer-link">Section HQ</a></li>
+              <li><a href="#" class="footer-link">Section Coach</a></li>
+              <li><a href="#" class="footer-link">Book a demo</a></li>
+              <li><a href="#" class="footer-link">Events</a></li>
+              <li><a href="#" class="footer-link">Memberships</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <p class="footer-heading mb-3">SERVICES</p>
+            <ul class="list-unstyled d-grid gap-2 mb-0">
+              <li>
+                <a href="#" class="footer-link">AI Planning and Benchmarking</a>
+              </li>
+              <li><a href="#" class="footer-link">Leadership Workshops</a></li>
+              <li>
+                <a href="#" class="footer-link">AI Strategic Consulting</a>
+              </li>
+              <li><a href="#" class="footer-link">Leaders Bootcamp</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <p class="footer-heading mb-3">RESOURCES</p>
+            <ul class="list-unstyled d-grid gap-2 mb-0">
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">Reports</a></li>
+              <li><a href="#" class="footer-link">Playbooks</a></li>
+              <li><a href="#" class="footer-link">About us</a></li>
+              <li><a href="#" class="footer-link">Upcoming courses</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <p class="footer-heading mb-3">LEGAL</p>
+            <ul class="list-unstyled d-grid gap-2 mb-0">
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Security</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mt-5 pt-4"
+        >
+          <p class="footer-copy mb-0">© 2026 Section AI. All rights reserved</p>
+          <div class="d-flex align-items-center gap-4">
+            <a href="#" class="footer-link">LinkedIn</a>
+            <a href="#" class="footer-link">Twitter</a>
+            <a href="#" class="footer-link">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Init Swiper -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: { delay: 3000, disableOnInteraction: false },
+        pagination: { el: ".swiper-pagination", clickable: true },
+      });
+    </script>
+  </body>
+</html>
