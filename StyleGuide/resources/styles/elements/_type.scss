@@ -1,0 +1,184 @@
+// Typography System - Clean and DRY
+
+// Typography Mixins
+@mixin typography-base($font-family, $font-size-mobile, $font-size-desktop, $font-weight, $line-height-mobile: normal, $line-height-desktop: normal, $letter-spacing: -0.01em, $font-style: normal) {
+  font-family: $font-family;
+  font-size: $font-size-mobile;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  line-height: $line-height-mobile;
+  letter-spacing: $letter-spacing;
+  
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-desktop;
+    line-height: $line-height-desktop;
+  }
+}
+
+// H1 Styles
+h1, .h1 {
+  @include typography-base(var(--font-primary), 2.125rem, 3rem, $font-weight-semibold, 100%, normal);
+}
+
+.h1-desktop {
+  @include typography-base(var(--font-primary), 3rem, 3rem, $font-weight-semibold, normal, normal);
+}
+
+.h1-mobile {
+  @include typography-base(var(--font-primary), 2.125rem, 2.125rem, $font-weight-semibold, 100%, 100%);
+}
+
+.h1-italic-desktop {
+  @include typography-base(var(--font-primary), 2.625rem, 2.625rem, $font-weight-normal, normal, normal, -0.01em, italic);
+}
+
+.h1-italic-mobile {
+  @include typography-base(var(--font-primary), 2.125rem, 2.125rem, $font-weight-normal, 100%, 100%, -0.01em, italic);
+}
+
+// H2 Styles
+h2, .h2 {
+  @include typography-base(var(--font-primary), 1.5rem, 2.625rem, $font-weight-semibold, 115%, normal);
+}
+
+.h2-desktop {
+  @include typography-base(var(--font-primary), 2.625rem, 2.625rem, $font-weight-semibold, normal, normal);
+}
+
+.h2-mobile {
+  @include typography-base(var(--font-primary), 1.5rem, 1.5rem, $font-weight-semibold, 115%, 115%);
+}
+
+// H3 Styles
+h3, .h3 {
+  @include typography-base(var(--font-primary), 1.25rem, 1.625rem, $font-weight-semibold);
+}
+
+.h3-semi-desktop {
+  @include typography-base(var(--font-primary), 1.625rem, 1.625rem, $font-weight-semibold);
+}
+
+.h3-semi-mobile {
+  @include typography-base(var(--font-primary), 1.25rem, 1.25rem, $font-weight-semibold);
+}
+
+.h3-italic-desktop {
+  @include typography-base(var(--font-primary), 1.625rem, 1.625rem, $font-weight-normal, normal, normal, -0.01em, italic);
+}
+
+.h3-italic-mobile {
+  @include typography-base(var(--font-primary), 1.25rem, 1.25rem, $font-weight-normal, normal, normal, -0.01em, italic);
+}
+
+// Special Styles
+.special-xl {
+  @include typography-base(var(--font-primary), 2.5rem, 5rem, $font-weight-semibold, 100%, 90%);
+}
+
+.special-xl-desktop {
+  @include typography-base(var(--font-primary), 5rem, 5rem, $font-weight-semibold, 90%, 90%);
+}
+
+.special-xl-mobile {
+  @include typography-base(var(--font-primary), 2.5rem, 2.5rem, $font-weight-semibold, 100%, 100%);
+}
+
+.number {
+  @include typography-base(var(--font-primary), 3.75rem, 5rem, $font-weight-normal, normal, normal, -0.05em);
+}
+
+.number-desktop {
+  @include typography-base(var(--font-primary), 5rem, 5rem, $font-weight-normal, normal, normal, -0.05em);
+}
+
+.number-mobile {
+  @include typography-base(var(--font-primary), 3.75rem, 3.75rem, $font-weight-normal, normal, normal, -0.05em);
+}
+
+// Body Styles
+.intro {
+  @include typography-base(var(--font-primary), 1.25rem, 1.625rem, $font-weight-normal, 120%, normal);
+}
+
+.intro-desktop {
+  @include typography-base(var(--font-primary), 1.625rem, 1.625rem, $font-weight-normal, normal, normal);
+}
+
+.intro-mobile {
+  @include typography-base(var(--font-primary), 1.25rem, 1.25rem, $font-weight-normal, 120%, 120%);
+}
+
+.body {
+  @include typography-base(var(--font-primary), 1rem, 1.125rem, $font-weight-normal, 125%, normal);
+}
+
+.body-desktop {
+  @include typography-base(var(--font-primary), 1.125rem, 1.125rem, $font-weight-normal, normal, normal);
+}
+
+.body-mobile {
+  @include typography-base(var(--font-primary), 1rem, 1rem, $font-weight-normal, 125%, 125%);
+}
+
+.body-semi {
+  @include typography-base(var(--font-primary), 1rem, 1.125rem, $font-weight-semibold, normal, normal);
+}
+
+.body-semi-desktop {
+  @include typography-base(var(--font-primary), 1.125rem, 1.125rem, $font-weight-semibold, normal, normal);
+}
+
+.body-semi-mobile {
+  @include typography-base(var(--font-primary), 1rem, 1rem, $font-weight-semibold, normal, normal);
+}
+
+.body-small {
+  @include typography-base(var(--font-primary), 0.75rem, 0.875rem, $font-weight-normal);
+}
+
+.body-small-desktop {
+  @include typography-base(var(--font-primary), 0.875rem, 0.875rem, $font-weight-normal);
+}
+
+.body-small-mobile {
+  @include typography-base(var(--font-primary), 0.75rem, 0.75rem, $font-weight-normal);
+}
+
+.body-small-semi {
+  @include typography-base(var(--font-primary), 0.75rem, 0.875rem, $font-weight-semibold);
+}
+
+.body-small-semi-desktop {
+  @include typography-base(var(--font-primary), 0.875rem, 0.875rem, $font-weight-semibold);
+}
+
+.body-small-semi-mobile {
+  @include typography-base(var(--font-primary), 0.75rem, 0.75rem, $font-weight-semibold);
+}
+
+.body-xs {
+  @include typography-base(var(--font-primary), 0.625rem, 0.75rem, $font-weight-normal);
+}
+
+.body-xs-desktop {
+  @include typography-base(var(--font-primary), 0.75rem, 0.75rem, $font-weight-normal);
+}
+
+.body-xs-mobile {
+  @include typography-base(var(--font-primary), 0.625rem, 0.625rem, $font-weight-normal);
+}
+
+// Button and Mono Styles
+.button-label,
+.button-desktop,
+.button-mobile {
+  @include typography-base(var(--font-secondary), 1.375rem, 1.375rem, $font-weight-normal, normal, normal, 0.1em);
+  text-transform: uppercase;
+}
+
+.mono-tag,
+.mono-tag-desktop,
+.mono-tag-mobile {
+  @include typography-base(var(--font-mono), 0.75rem, 0.75rem, $font-weight-normal);
+  text-transform: uppercase;
+}

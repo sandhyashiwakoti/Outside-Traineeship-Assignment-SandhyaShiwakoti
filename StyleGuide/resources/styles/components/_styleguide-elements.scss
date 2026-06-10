@@ -1,0 +1,114 @@
+// Styleguide-specific Elements using variables
+
+// Color Swatches
+.color-swatch {
+  height: 120px;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+  border: 1px solid var(--color-border);
+
+  &.brand-orange {
+    background-color: var(--color-brand-orange);
+  }
+
+  &.pure-black {
+    background-color: var(--color-black);
+  }
+
+  &.pure-white {
+    background-color: var(--color-white);
+  }
+}
+
+.color-info {
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.color-code {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+// Typography Example Containers
+.typography-example {
+  margin-bottom: var(--spacing-xxl);
+  padding: var(--spacing-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+}
+
+.typography-label {
+  font-size: 0.75rem;
+  color: var(--color-brand-orange);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-md);
+}
+
+// Typography Specifications Display
+.typography-specs {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+  
+  .spec-item {
+    display: inline-block;
+    margin-right: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+    
+    &::before {
+      content: "•";
+      color: var(--color-brand-orange);
+      margin-right: var(--spacing-xs);
+    }
+  }
+}
+
+// CSS Class Name Display
+.class-name {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-black);
+  background: #f1f3f5;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  border-left: 3px solid var(--color-brand-orange);
+}
+
+// Button and Tag Example Layout
+.button-examples,
+.tag-examples {
+  display: flex;
+  gap: var(--spacing-xl);
+  align-items: flex-start;
+  
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+}
+
+.button-group,
+.tag-group {
+  text-align: center;
+  
+  .class-name {
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .button-description,
+  .tag-description {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-top: var(--spacing-xs);
+    margin-bottom: 0;
+  }
+}

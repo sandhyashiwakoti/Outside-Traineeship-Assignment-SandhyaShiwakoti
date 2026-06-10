@@ -1,0 +1,85 @@
+// Bootstrap Variables
+
+// Primitive Colours
+$brand-orange: #ff6449;
+$pure-black: #000000;
+$pure-white: #ffffff;
+
+// Theme Colours
+$primary: $brand-orange;
+$dark: $pure-black;
+$light: $pure-white;
+
+// Typography
+$font-family-sans-serif:
+  "Switzer",
+  -apple-system,
+  "Segoe UI",
+  Roboto,
+  sans-serif;
+$font-family-heading: $font-family-sans-serif;
+$font-family-secondary: "Interstate-Bold", sans-serif;
+$font-family-mono: "InterstateMono", monospace;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Spacing Scale
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  // 4px
+  2: $spacer * 0.5,
+  // 8px
+  3: $spacer * 0.75,
+  // 12px
+  4: $spacer * 1,
+  // 16px
+  5: $spacer * 1.25,
+  // 20px
+  6: $spacer * 1.5,
+  // 24px
+  8: $spacer * 2,
+  // 32px
+  10: $spacer * 2.5,
+  // 40px
+  12: $spacer * 3,
+  // 48px
+  16: $spacer * 4,
+  // 64px
+  20: $spacer * 5,
+  // 80px
+  24: $spacer * 6, // 96px
+);
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  md: 768px,
+  lg: 1025px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// Container
+$container-max-widths: (
+  xxl: 1440px,
+);
+
+// Grid
+$grid-gutter-width: 2rem; // 32px
+
+// Border Radius
+$border-radius: 0.875rem; // 14px (button radius)
+$border-radius-sm: 0.5rem; // 8px (tag radius)
+$border-radius-lg: 1rem; // 16px
+$border-radius-pill: 50rem;
+
+// Shadows
+$box-shadow: 0 0.5rem 1rem rgba($pure-black, 0.15);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($pure-black, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba($pure-black, 0.175);

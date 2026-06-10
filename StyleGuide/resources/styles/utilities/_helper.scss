@@ -1,0 +1,109 @@
+// Utilities
+
+// Text
+.text-brand-orange {
+  color: var(--color-brand-orange) !important;
+}
+.text-black {
+  color: var(--color-black) !important;
+}
+.text-white {
+  color: var(--color-white) !important;
+}
+
+// Background
+.bg-brand-orange {
+  background-color: var(--color-brand-orange) !important;
+}
+.bg-black {
+  background-color: var(--color-black) !important;
+}
+.bg-white {
+  background-color: var(--color-white) !important;
+}
+
+// Font Family
+.font-primary {
+  font-family: var(--font-primary) !important;
+}
+.font-secondary {
+  font-family: var(--font-secondary) !important;
+}
+.font-mono {
+  font-family: var(--font-mono) !important;
+}
+
+// Font Weight
+.fw-normal {
+  font-weight: $font-weight-normal !important;
+}
+.fw-semibold {
+  font-weight: $font-weight-semibold !important;
+}
+.fw-bold {
+  font-weight: $font-weight-bold !important;
+}
+
+// Letter Spacing
+.ls-tight {
+  letter-spacing: -0.05em !important;
+}
+.ls-normal {
+  letter-spacing: -0.01em !important;
+}
+.ls-wide {
+  letter-spacing: 0.1em !important;
+}
+
+// Border
+.border-brand {
+  border: 1px solid var(--color-brand-orange) !important;
+}
+.border-black {
+  border: 1px solid var(--color-black) !important;
+}
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+// Text Transform
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+// Display
+.d-inline-flex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Spacing
+.section-gap {
+  padding-top: map-get($spacers, 16);
+  padding-bottom: map-get($spacers, 16);
+}
+
+// Transition
+.transition-base {
+  transition:
+    color 0.35s ease,
+    background-color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+// Opacity
+.opacity-50 {
+  opacity: 0.5 !important;
+}
+.opacity-60 {
+  opacity: 0.6 !important;
+}
+.opacity-85 {
+  opacity: 0.85 !important;
+}
+
+// Height
+.h-120 {
+  height: 7.5rem !important;
+} // 120px

@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styleguide</title>
+    <link rel="stylesheet" href="../css/app.css" />
+  </head>
+
+  <body>
+    <!-- Mobile Navigation Toggle -->
+    <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Side Navigation -->
+    <nav class="side-navbar" id="sideNavbar">
+      <div class="brand">
+        <h3>Styleguide</h3>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#colors" class="nav-link active">
+            <span>Colors</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#typography" class="nav-link">
+            <span>Typography</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#buttons-tags" class="nav-link">
+            <span>Buttons & Tags</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="styleguide-layout">
+      <main class="styleguide-content">
+        <!-- Header -->
+        <header class="styleguide-header" id="colors">
+          <div class="container">
+            <h1 class="header-title">Styleguide</h1>
+          </div>
+        </header>
+
+        <section class="styleguide-section">
+          <div class="container">
+            <h2 class="section-title">Colors</h2>
+
+            <div class="row g-4">
+              <div class="col-12 col-md-4">
+                <div class="color-swatch brand-orange"></div>
+                <p class="class-name">.brand-orange</p>
+                <p class="color-info">Brand Orange</p>
+                <p class="color-code">#FF6449</p>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div class="color-swatch pure-black"></div>
+                <p class="class-name">.pure-black</p>
+                <p class="color-info">Pure Black</p>
+                <p class="color-code">#000000</p>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div class="color-swatch pure-white"></div>
+                <p class="class-name">.pure-white</p>
+                <p class="color-info">Pure White</p>
+                <p class="color-code">#FFFFFF</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="styleguide-section" id="typography">
+          <div class="container">
+            <h2 class="section-title">Typography</h2>
+
+            <p class="subsection-title">Headings</p>
+
+            <div class="typography-example">
+              <div class="row align-items-end g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D H1 - Switzer Semibold 48px</p>
+                  <p class="class-name">.h1-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 48px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h1-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M H1 - Switzer Semibold 34px</p>
+                  <p class="class-name">.h1-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 34px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: 100%</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h1-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row align-items-end g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D H1 Italic - Switzer Italic 42px</p>
+                  <p class="class-name">.h1-italic-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 42px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Font Style: italic</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h1-italic-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M H1 Italic - Switzer Italic 34px</p>
+                  <p class="class-name">.h1-italic-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 34px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Font Style: italic</span>
+                    <span class="spec-item">Line Height: 100%</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h1-italic-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row align-items-end g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D H2 - Switzer Semibold 42px</p>
+                  <p class="class-name">.h2-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 42px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h2-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M H2 - Switzer Semibold 24px</p>
+                  <p class="class-name">.h2-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 24px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: 115%</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h2-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row align-items-end g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D H3 Semi - Switzer Semibold 26px</p>
+                  <p class="class-name">.h3-semi-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 26px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h3-semi-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M H3 Semi - Switzer Semibold 20px</p>
+                  <p class="class-name">.h3-semi-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 20px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h3-semi-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row align-items-end g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D H3 Italic - Switzer Italic 26px</p>
+                  <p class="class-name">.h3-italic-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 26px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Font Style: italic</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h3-italic-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M H3 Italic - Switzer Italic 20px</p>
+                  <p class="class-name">.h3-italic-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 20px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Font Style: italic</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="h3-italic-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-5" />
+
+            <p class="subsection-title">Special</p>
+
+            <div class="typography-example">
+              <div class="row align-items-end g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Special XL - Switzer Semibold 80px</p>
+                  <p class="class-name">.special-xl-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 80px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: 90%</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="special-xl-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Special XL - Switzer Semibold 40px</p>
+                  <p class="class-name">.special-xl-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 40px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: 100%</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="special-xl-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row align-items-end g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Number - Switzer Regular 80px</p>
+                  <p class="class-name">.number-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 80px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.05em</span>
+                  </div>
+                  <div class="number-desktop">brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Number - Switzer Regular 60px</p>
+                  <p class="class-name">.number-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 60px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.05em</span>
+                  </div>
+                  <div class="number-mobile">brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-5" />
+
+            <p class="subsection-title">Body</p>
+
+            <div class="typography-example">
+              <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Intro - Switzer Regular 26px</p>
+                  <p class="class-name">.intro-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 26px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="intro-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Intro - Switzer Regular 20px</p>
+                  <p class="class-name">.intro-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 20px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: 120%</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="intro-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Body - Switzer Regular 18px</p>
+                  <p class="class-name">.body-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 18px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Body - Switzer Regular 16px</p>
+                  <p class="class-name">.body-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 16px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: 125%</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Body Semi - Switzer Semibold 18px</p>
+                  <p class="class-name">.body-semi-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 18px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-semi-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Body Semi - Switzer Semibold 16px</p>
+                  <p class="class-name">.body-semi-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 16px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-semi-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Body Small - Switzer Regular 14px</p>
+                  <p class="class-name">.body-small-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 14px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-small-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Body Small - Switzer Regular 12px</p>
+                  <p class="class-name">.body-small-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 12px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-small-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Body Small Semi - Switzer Semibold 14px</p>
+                  <p class="class-name">.body-small-semi-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 14px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-small-semi-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Body Small Semi - Switzer Semibold 12px</p>
+                  <p class="class-name">.body-small-semi-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 12px</span>
+                    <span class="spec-item">Font Weight: 600</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-small-semi-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Body XS - Switzer Regular 12px</p>
+                  <p class="class-name">.body-xs-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 12px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-xs-desktop">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Body XS - Switzer Regular 10px</p>
+                  <p class="class-name">.body-xs-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 10px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                  </div>
+                  <div class="body-xs-mobile">The quick brown fox jumps over the lazy dog.</div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-5" />
+
+            <p class="subsection-title">Special & Button Labels</p>
+
+            <div class="typography-example">
+              <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Button - Interstate-Bold Regular 22px</p>
+                  <p class="class-name">.button-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 22px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: 0.1em (10%)</span>
+                    <span class="spec-item">Text Transform: uppercase</span>
+                  </div>
+                  <div class="button-desktop">THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Button - Interstate-Bold Regular 22px</p>
+                  <p class="class-name">.button-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 22px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: 0.1em (10%)</span>
+                    <span class="spec-item">Text Transform: uppercase</span>
+                  </div>
+                  <div class="button-mobile">THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="typography-example">
+              <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Desktop/D Mono Tag - InterstateMono Regular 12px</p>
+                  <p class="class-name">.mono-tag-desktop</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 12px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                    <span class="spec-item">Text Transform: uppercase</span>
+                  </div>
+                  <div class="mono-tag-desktop">THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="typography-label">Mobile/M Mono Tag - InterstateMono Regular 12px</p>
+                  <p class="class-name">.mono-tag-mobile</p>
+                  <div class="typography-specs">
+                    <span class="spec-item">Font Size: 12px</span>
+                    <span class="spec-item">Font Weight: 400</span>
+                    <span class="spec-item">Line Height: normal</span>
+                    <span class="spec-item">Letter Spacing: -0.01em</span>
+                    <span class="spec-item">Text Transform: uppercase</span>
+                  </div>
+                  <div class="mono-tag-mobile">THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="styleguide-section" id="buttons-tags">
+          <div class="container">
+            <h2 class="section-title">Buttons &amp; Tags</h2>
+
+            <p class="subsection-title">Buttons</p>
+
+            <div class="button-examples">
+              <div class="button-group">
+                <button class="btn btn-outline">Button</button>
+                <p class="class-name">.btn .btn-outline</p>
+                <p class="button-description">Outline (default)</p>
+              </div>
+              <div class="button-group">
+                <button class="btn btn-primary">Button</button>
+                <p class="class-name">.btn .btn-primary</p>
+                <p class="button-description">Primary / hover state</p>
+              </div>
+            </div>
+
+            <hr class="my-5" />
+
+            <p class="subsection-title">Tags</p>
+
+            <div class="tag-examples">
+              <div class="tag-group">
+                <span class="c-tag">Tag</span>
+                <p class="class-name">.c-tag</p>
+                <p class="tag-description">Default</p>
+              </div>
+              <div class="tag-group">
+                <span class="c-tag is-selected">Tag</span>
+                <p class="class-name">.c-tag .is-selected</p>
+                <p class="tag-description">Selected</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Simple JavaScript for Navigation -->
+    <script>
+      // Simple mobile navigation toggle
+      const mobileToggle = document.getElementById('mobileNavToggle');
+      const sidebar = document.getElementById('sideNavbar');
+      const overlay = document.getElementById('mobileOverlay');
+      
+      mobileToggle.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+      });
+      
+      overlay.addEventListener('click', function() {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+
+      // Simple smooth scrolling for nav links
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+            // Close mobile menu
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

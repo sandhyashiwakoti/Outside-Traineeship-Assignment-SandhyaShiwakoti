@@ -1,0 +1,23 @@
+// 1. settings (Bootstrap)
+@import "settings/bootstrap-variables";
+
+// 2. Bootstrap source
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// 3. Settings
+@import "settings/global-vars";
+@import "settings/fonts";
+
+// 4. Elements
+@import "elements/type";
+@import "elements/grids";
+
+// 5. Components
+@import "components/buttons";
+@import "components/navigation";
+@import "components/styleguide-layout";
+@import "components/styleguide-elements";
+@import "components/styleguide";
+
+// 6. Utilities
+@import "utilities/helper";
